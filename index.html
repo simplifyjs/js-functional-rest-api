@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Simplify JS Demo| Vanilla JS Functional Programming - Rest API</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,900&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body class="d-flex justify-content-center">
+		<div class="container">
+			<h1>Vanilla JS Functional Programming <br>- Rest API</h1>
+			<div class="input-group mb-3">
+				<input type="text"  class="form-control" id="name" placeholder="Input Name">
+			</div>
+			<!-- Buttons -->
+			<button class="btn btn-primary" id="getBtn">Get Me!</button>
+			<button class="btn btn-warning" id="postBtn" onclick="getNameVal(document.getElementById('name').value)">Post it!</button>
+			<button class="btn btn-info" id="putBtn" onclick="getNameVal(document.getElementById('name').value)">Put in!</button>
+			<button class="btn btn-success" id="patchBtn" onclick="getNameVal(document.getElementById('name').value)">Patch it!</button>
+			<button class="btn btn-danger" id="deleteBtn">Delete this!</button>
+			<!-- List -->
+			<section id="result"></section>
+		</div>
+		<!-- Framework & Dependencies -->
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+		<script type="module" defer src="main.js"></script>
+	</body>
+</html>
